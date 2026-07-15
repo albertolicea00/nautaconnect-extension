@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="../../icons/icon32.png" alt="" width="20" height="20">
+    <span class="brand">NautaConnect</span>
+  </header>
+
+  <main>
+    <div class="status-row">
+      <span id="statusDot" class="dot"></span>
+      <span id="statusText" data-i18n="statusDisconnected"></span>
+    </div>
+
+    <div id="elapsed" class="elapsed" hidden>0:00:00</div>
+
+    <div id="timeLeftRow" class="timeleft" hidden>
+      <span data-i18n="timeLeft"></span>: <span id="timeLeftValue">—</span>
+      <button id="refreshBtn" class="link" data-i18n="refresh" type="button"></button>
+    </div>
+
+    <p id="error" class="error" hidden></p>
+
+    <button id="mainBtn" class="primary" type="button" data-i18n="connect"></button>
+  </main>
+
+  <footer>
+    <button id="optionsBtn" class="link" data-i18n="settings" type="button"></button>
+  </footer>
+
+  <script src="../i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
