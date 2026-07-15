@@ -55,8 +55,8 @@ Everything technical — protocol, architecture, packaging — lives in **[SPECS
 
 NautaConnect is a family of small native apps, one per platform, no shared bloat:
 
-- **[nautaconnect-macos](../../../nautaconnect-macos)** — native menu bar app for macOS
-- **[nautaconnect-windows](../../../nautaconnect-windows)** — native system-tray app for Windows
+- **[nautaconnect-macos](https://github.com/albertolicea00/nautaconnect-macos)** — native menu bar app for macOS
+- **[nautaconnect-windows](https://github.com/albertolicea00/nautaconnect-windows)** — native system-tray app for Windows
 
 ## Contributing
 
