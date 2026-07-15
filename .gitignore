@@ -1,0 +1,11 @@
+# Packaged builds
+dist/
+*.zip
+*.xpi
+
+# Node (only used for tests)
+node_modules/
+
+# Editors / OS
+.DS_Store
+.vscode/
