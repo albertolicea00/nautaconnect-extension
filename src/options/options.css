@@ -1,0 +1,84 @@
+:root {
+  --navy: #000066;
+  --cyan: #00CCFF;
+  --text: #1c1c28;
+  --muted: #6b6b7b;
+  --bg: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #f0f0f5;
+    --muted: #9a9aae;
+    --bg: #1e1e2a;
+  }
+}
+
+body {
+  min-width: 300px;
+  margin: 0;
+  padding: 16px;
+  font: 13px/1.5 -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+h1 {
+  font-size: 15px;
+  margin: 0 0 14px;
+  color: var(--navy);
+}
+
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: var(--cyan);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 500;
+}
+
+input,
+select {
+  padding: 6px 8px;
+  border: 1px solid var(--muted);
+  border-radius: 5px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.hint {
+  margin: 0;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+button {
+  align-self: flex-start;
+  padding: 7px 16px;
+  border: none;
+  border-radius: 6px;
+  background: var(--navy);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.25);
+}
+
+#savedMsg {
+  color: var(--cyan);
+  font-weight: 600;
+}
