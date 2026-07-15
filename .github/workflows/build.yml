@@ -1,0 +1,29 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-and-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validate manifests
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('manifest.json'))"
+          node -e "JSON.parse(require('fs').readFileSync('manifest.firefox.json'))"
+          node -e "for (const l of ['en','es']) JSON.parse(require('fs').readFileSync('_locales/'+l+'/messages.json'))"
+      - name: Test
+        run: node --test
+      - name: Package
+        run: ./scripts/package.sh
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: nautaconnect-zips
+          path: dist/*.zip
