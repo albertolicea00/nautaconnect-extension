@@ -8,7 +8,7 @@ What problem does it solve? Link issues if any.
 
 ## Checklist
 
-- [ ] `node --test test/` passes
+- [ ] `node --test` passes
 - [ ] Loads in Chrome (Load unpacked) and Firefox (Temporary Add-on)
 - [ ] Code and comments in English; UI strings added to `_locales/en` and `_locales/es`
 - [ ] `manifest.json` and `manifest.firefox.json` kept in sync

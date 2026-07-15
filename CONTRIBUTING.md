@@ -15,7 +15,7 @@ Thanks for helping! This is a small, focused project — the bar for a good PR i
 ```sh
 git clone <your fork>
 cd nautaconnect-extension
-node --test test/        # parser tests (Node 18+)
+node --test        # parser tests (Node 18+)
 ```
 
 - **Chrome**: `chrome://extensions` → Developer mode → *Load unpacked* → repo root.
@@ -45,7 +45,7 @@ One logical change per commit. No `Co-Authored-By` or tool-attribution trailers.
 ## Pull requests
 
 1. Fork, branch from `main` (`feat/...`, `fix/...`).
-2. Make sure `node --test test/` passes and the extension loads in both browsers.
+2. Make sure `node --test` passes and the extension loads in both browsers.
 3. If you touched the portal protocol and could verify it on a real ETECSA network, say so in the PR description — it is the only way to truly test it.
 4. Fill in the PR template. Small PRs get reviewed fast.
 

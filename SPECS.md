@@ -98,7 +98,7 @@ Load unpacked for development: `chrome://extensions` → Load unpacked (repo roo
 ## 8. Testing
 
 ```sh
-node --test test/
+node --test
 ```
 
 Runs the parser against anonymized HTML fixtures (login page, online page, failed login) — same fixtures as the sibling native apps. Tokens/IPs are synthetic.
